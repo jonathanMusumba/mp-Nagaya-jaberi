@@ -1,4 +1,3 @@
-// Wait for the DOM to fully load
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     const sections = document.querySelectorAll('section');
@@ -15,26 +14,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Highlight active navigation link on scroll
-    window.addEventListener('scroll', () => {
+    // Function to show only the active link on mobile
+    function showActiveLinkOnMobile() {
         let currentSection = '';
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-                currentSection = section.getAttribute('id');
-            }
-        });
+        // Only apply this on screens smaller than 768px
+        if (window.innerWidth < 768) {
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${currentSection}`) {
-                link.classList.add('active');
-            }
-        });
-    });
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                    link.style.display = 'inline-block'; // Show the active link
+                } else {
+                    link.classList.remove('active');
+                    link.style.display = 'none'; // Hide non-active links
+                }
+            });
+        } else {
+            // On larger screens, show all links
+            navLinks.forEach(link => {
+                link.style.display = 'inline-block';
+            });
+        }
+    }
+
+    // Call the function on scroll
+    window.addEventListener('scroll', showActiveLinkOnMobile);
+
+    // Call the function on page load in case user reloads on a scrolled position
+    showActiveLinkOnMobile();
+
+    // Adjust link visibility on window resize
+    window.addEventListener('resize', showActiveLinkOnMobile);
 });
+
 // Lightbox for Media Gallery
 document.querySelectorAll('.media-item img').forEach(img => {
     img.addEventListener('click', function() {
