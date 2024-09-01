@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    header .container {
+        padding: 10px 0;
+        /* Reduce padding for smaller screens */
+    }
+    .section {
+        padding-top: 100px;
+        /* Increase top padding to ensure content isn't covered */
+    }
+    /* Optional: Adjust font sizes and header spacing further */
+    header {
+        padding: 10px 0;
+        /* Adjust header padding if needed */
+    }
+}
+
+@media (max-width: 480px) {
+    header .container {
+        padding: 8px 0;
+        /* Further reduce padding for very small screens */
+    }
+    .section {
+        padding-top: 90px;
+        /* Increase top padding for smaller screens */
+    }
+    .home-section h1 {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+}

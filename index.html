@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for Nagaya Jaberi">
+    <meta name="theme-color" content="#FFD700">
+    <title>Nagaya Jaberi - Portfolio</title>
+    <link rel="icon" href="uploads/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <!-- PWA integration -->
+    <link rel="manifest" href="manifest/manifest.json">
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    <div id="section-notification" class="section-notification"></div>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="uploads/logo.png" alt="Nagaya Jaberi Logo">
+            </div>
+            <nav id="navbar" aria-label="Primary Navigation">
+                <ul>
+                    <li><a href="#home" aria-label="Home section">Home</a></li>
+                    <li><a href="#about" aria-label="About section">About</a></li>
+                    <li><a href="#vision" aria-label="Vision & Mission section">Vision & Mission</a></li>
+                    <li><a href="#issues" aria-label="Issues & Plans section">Campaigns</a></li>
+                    <li><a href="#media" aria-label="Media Gallery section">Media</a></li>
+                    <li><a href="#testimonials" aria-label="Testimonials section">Testimonials</a></li>
+                    <li><a href="#events" aria-label="Events section">Events</a></li>
+                    <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section" data-section-name="Home">
+        <div class="container">
+            <img src="uploads/nagaya.png" alt="Portrait of Nagaya Jaberi" class="main-image">
+            <h1>Vote Nagaya Jaberi</h1>
+            <p>Buzaya Constituency 2026-2031</p>
+            <p>For Economic Transformation, Development &amp; Indiscriminative Leadership</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section" data-section-name="About">
+        <div class="container">
+            <h2>About Nagaya Jaberi</h2>
+
+            <!-- Bio Information -->
+            <div class="bio-info">
+                <h3>Bio Information</h3>
+                <p>Born:</p>
+                <p>Place:</p>
+                <p>Village:</p>
+                <p>Parish:</p>
+                <p>Sub county:</p>
+            </div>
+
+            <!-- Education Background -->
+            <div class="education-background">
+                <h3>Education Background</h3>
+                <h4>Primary School:
+                    <p>XXX Ps</p>
+                </h4>
+            </div>
+
+            <!-- Political Journey -->
+            <div class="political-journey">
+                <h3>Political Journey</h3>
+                <p>Starting as a community organizer...</p>
+            </div>
+
+            <!-- Values and Beliefs -->
+            <div class="values-beliefs">
+                <h3>Values and Beliefs</h3>
+                <p>Integrity, accountability, and inclusivity are the cornerstones...</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="section vision-section" data-section-name="Mission & Vision">
+        <div class="container">
+            <h2>Vision, Mission, and Objectives</h2>
+
+            <div class="vision-mission">
+                <h3>Vision</h3>
+                <p>Our vision is to create a thriving community where...</p>
+            </div>
+
+            <div class="vision-mission">
+                <h3>Mission</h3>
+                <p>Our mission is to provide excellent services and...</p>
+            </div>
+
+            <div class="objectives">
+                <h3>Objectives</h3>
+                <ul>
+                    <li>Healthcare for All</li>
+                    <li>Quality Education</li>
+                    <li>Economic Growth</li>
+                    <li>Environmental Protection</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Issues & Plans Section -->
+    <!-- Issues & Plans Section -->
+    <section id="issues" class="section issues-section" data-section-name="Campaigns">
+        <div class="container">
+            <h2>Our Campaigns</h2>
+
+            <!-- Posts Grid -->
+            <div class="posts-grid">
+                <!-- Post Item -->
+                <div class="post" data-id="1">
+                    <h3 class="post-title">Title of the Issue</h3>
+                    <p class="post-summary">Brief summary of the issue or plan goes here...</p>
+                    <div class="post-engagement">
+                        <span class="engagement-icon">
+                        <img src="like-icon.png" alt="Like" class="reaction-icon"> <span class="like-count">123</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="dislike-icon.png" alt="Dislike" class="reaction-icon"> <span class="dislike-count">45</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="comment-icon.png" alt="Comments" class="reaction-icon"> <span class="comment-count">67</span>
+                        </span>
+                    </div>
+                    <button class="expand-btn">Read More</button>
+
+                    <!-- Expanded Post Content -->
+                    <div class="post-content" style="display: none;">
+                        <p>Full content of the post...</p>
+
+                        <!-- Comments Section -->
+                        <div class="comments-section">
+                            <h4>Comments</h4>
+                            <div class="comments-list">
+                                <!-- Comments will be dynamically inserted here -->
+                            </div>
+                            <!-- Add Comment Form -->
+                            <div class="add-comment-form">
+                                <textarea placeholder="Write a comment..."></textarea>
+                                <button class="submit-comment-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post" data-id="1">
+                    <h3 class="post-title">Title of the Issue</h3>
+                    <p class="post-summary">Brief summary of the issue or plan goes here...</p>
+                    <div class="post-engagement">
+                        <span class="engagement-icon">
+                        <img src="like-icon.png" alt="Like" class="reaction-icon"> <span class="like-count">123</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="dislike-icon.png" alt="Dislike" class="reaction-icon"> <span class="dislike-count">45</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="comment-icon.png" alt="Comments" class="reaction-icon"> <span class="comment-count">67</span>
+                        </span>
+                    </div>
+                    <button class="expand-btn">Read More</button>
+
+                    <!-- Expanded Post Content -->
+                    <div class="post-content" style="display: none;">
+                        <p>Full content of the post...</p>
+
+                        <!-- Comments Section -->
+                        <div class="comments-section">
+                            <h4>Comments</h4>
+                            <div class="comments-list">
+                                <!-- Comments will be dynamically inserted here -->
+                            </div>
+                            <!-- Add Comment Form -->
+                            <div class="add-comment-form">
+                                <textarea placeholder="Write a comment..."></textarea>
+                                <button class="submit-comment-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post" data-id="1">
+                    <h3 class="post-title">Title of the Issue</h3>
+                    <p class="post-summary">Brief summary of the issue or plan goes here...</p>
+                    <div class="post-engagement">
+                        <span class="engagement-icon">
+                        <img src="like-icon.png" alt="Like" class="reaction-icon"> <span class="like-count">123</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="dislike-icon.png" alt="Dislike" class="reaction-icon"> <span class="dislike-count">45</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="comment-icon.png" alt="Comments" class="reaction-icon"> <span class="comment-count">67</span>
+                        </span>
+                    </div>
+                    <button class="expand-btn">Read More</button>
+
+                    <!-- Expanded Post Content -->
+                    <div class="post-content" style="display: none;">
+                        <p>Full content of the post...</p>
+
+                        <!-- Comments Section -->
+                        <div class="comments-section">
+                            <h4>Comments</h4>
+                            <div class="comments-list">
+                                <!-- Comments will be dynamically inserted here -->
+                            </div>
+                            <!-- Add Comment Form -->
+                            <div class="add-comment-form">
+                                <textarea placeholder="Write a comment..."></textarea>
+                                <button class="submit-comment-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post" data-id="1">
+                    <h3 class="post-title">Title of the Issue</h3>
+                    <p class="post-summary">Brief summary of the issue or plan goes here...</p>
+                    <div class="post-engagement">
+                        <span class="engagement-icon">
+                        <img src="like-icon.png" alt="Like" class="reaction-icon"> <span class="like-count">123</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="dislike-icon.png" alt="Dislike" class="reaction-icon"> <span class="dislike-count">45</span>
+                        </span>
+                        <span class="engagement-icon">
+                        <img src="comment-icon.png" alt="Comments" class="reaction-icon"> <span class="comment-count">67</span>
+                        </span>
+                    </div>
+                    <button class="expand-btn">Read More</button>
+
+                    <!-- Expanded Post Content -->
+                    <div class="post-content" style="display: none;">
+                        <p>Full content of the post...</p>
+
+                        <!-- Comments Section -->
+                        <div class="comments-section">
+                            <h4>Comments</h4>
+                            <div class="comments-list">
+                                <!-- Comments will be dynamically inserted here -->
+                            </div>
+                            <!-- Add Comment Form -->
+                            <div class="add-comment-form">
+                                <textarea placeholder="Write a comment..."></textarea>
+                                <button class="submit-comment-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for additional posts -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Registration Form -->
+    <div class="registration-form" style="display: none;">
+        <h3>Register to Comment and React</h3>
+        <form id="registerForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- Media Section -->
+    <section id="media" class="section media-section" data-section-name="Media">
+        <div class="container">
+            <h2>Media Gallery</h2>
+            <div class="media-grid">
+                <div class="media-item">
+                    <img src="uploads/images/3.jpg" alt="Community Outreach Event">
+                </div>
+                <div class="media-item">
+                    <img src="uploads/images/2.jpg" alt="Economic Development Forum">
+                </div>
+                <div class="media-item">
+                    <img src="uploads/images/1.jpg" alt="Youth Empowerment Workshop">
+                </div>
+                <div class="media-item">
+                    <img src="media/media4.jpg" alt="Environmental Conservation Initiative">
+                </div>
+            </div>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="testimonials" class="section testimonial-section" data-section-name="Testimonials">
+        <h2>What My Voters Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"Nagaya Jaberi is the leader we've been waiting for!" - John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"I believe in Nagaya's vision for a better future." - Jane Smith</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section events-section" data-section-name="Events(Past events & Upcoming)">
+        <h2>Campaign Events</h2>
+        <h3>Upcoming Events</h3>
+        <ul>
+            <li>Town Hall Meeting - September 10, 2024, City Hall</li>
+            <li>Community Cleanup - September 15, 2024, Central Park</li>
+        </ul>
+        <h3>Past Events</h3>
+        <div class="past-events-gallery">
+            <img src="/uploads/event1.jpg" alt="Town Hall Meeting">
+            <img src="/uploads/event2.jpg" alt="Community Cleanup">
+        </div>
+    </section>
+    <section id="contact" class="section contact-section" data-section-name="Contacts">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <button id="back-to-top" aria-label="Back to Top">&#8679;</button>
+    <!-- Top Posts & Commenters Section -->
+    <section id="top-posts" class="section top-posts-section">
+        <div class="container">
+            <h2>Top Posts & Top Commenters</h2>
+            <div class="top-posts">
+                <h3>Top Posts</h3>
+                <div class="top-posts-list">
+                    <!-- Example Top Post -->
+                    <div class="top-post">
+                        <h4>Title of Top Post</h4>
+                        <p>Summary of the top post...</p>
+                    </div>
+                    <!-- Repeat for additional top posts -->
+                </div>
+            </div>
+            <div class="top-commenters">
+                <h3>Top Commenters</h3>
+                <ul>
+                    <!-- Example Top Commenter -->
+                    <li>John Doe - 25 comments</li>
+                    <!-- Repeat for additional top commenters -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#vision">Vision & Mission</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Nagaya Jaberi Campaign. All rights reserved.</p>
+    </footer>
+    <button id="back-to-top" aria-label="Back to Top">&#8679;</button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/comments.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/js/service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                }).catch(function(error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+        }
+    </script>
+</body>
+
+</html>
